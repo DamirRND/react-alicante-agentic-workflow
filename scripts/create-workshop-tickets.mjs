@@ -44,7 +44,9 @@ function originRepo() {
   } catch {
     fail("No git remote named origin. Run this inside your cloned fork.");
   }
-  const match = url.match(/github\.com[:/]([^/]+\/[^/]+?)(?:\.git)?$/);
+  const match = url.match(
+    /^(?:https:\/\/github\.com\/|(?:ssh:\/\/)?git@github\.com(?:-[\w.-]+)?[:/])([^/]+\/[^/]+?)(?:\.git)?$/,
+  );
   if (!match) {
     fail(`origin is not a GitHub repo: ${url}`);
   }

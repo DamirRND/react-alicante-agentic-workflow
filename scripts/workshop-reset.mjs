@@ -30,7 +30,9 @@ function gh(args) {
 
 const repo = (() => {
   const url = git(["remote", "get-url", "origin"]);
-  const match = url.match(/github\.com[:/]([^/]+\/[^/]+?)(?:\.git)?$/);
+  const match = url.match(
+    /^(?:https:\/\/github\.com\/|(?:ssh:\/\/)?git@github\.com(?:-[\w.-]+)?[:/])([^/]+\/[^/]+?)(?:\.git)?$/,
+  );
   if (!match) fail(`origin is not a GitHub repo: ${url}`);
   return match[1];
 })();
