@@ -18,11 +18,13 @@ const session: Session = {
 };
 
 describe("SessionBlock", () => {
-  it("shows the title, the start time and the speaker", () => {
+  it("shows the title, the start time, the speaker and the level", () => {
     render(<SessionBlock session={session} top={0} height={72} />);
 
     expect(screen.getByText("Opening Keynote")).toBeInTheDocument();
-    expect(screen.getByText("09:00 · Marta Fernandez")).toBeInTheDocument();
+    expect(
+      screen.getByText("09:00 · Marta Fernandez · beginner"),
+    ).toBeInTheDocument();
   });
 
   it("links to the session page", () => {
