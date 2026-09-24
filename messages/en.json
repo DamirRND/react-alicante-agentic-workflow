@@ -2,6 +2,7 @@
   "Nav": {
     "home": "React Alicante Companion",
     "schedule": "Schedule",
+    "speakers": "Speakers",
     "stats": "Stats",
     "news": "News",
     "openMenu": "Open menu",
@@ -11,5 +12,8 @@
     "heading": "React Alicante Conference Companion",
     "line1": "Your schedule, your sessions —",
     "line2": "one place"
+  },
+  "Sessions": {
+    "level": "Level"
   }
 }
