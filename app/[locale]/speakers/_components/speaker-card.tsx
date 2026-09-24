@@ -29,7 +29,11 @@ export function SpeakerCard({ speaker, sessions }: SpeakerSessions) {
                   <Text fontSize="sm" truncate>
                     {session.title}
                   </Text>
-                  <Text fontSize="sm" color="var(--text-muted)" flexShrink="0">
+                  <Text
+                    fontSize="sm"
+                    color="var(--text-secondary)"
+                    flexShrink="0"
+                  >
                     {session.startTime}
                   </Text>
                 </Flex>

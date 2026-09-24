@@ -3,6 +3,12 @@ import type { Session } from "@/types/session";
 /**
  * Not an individual speaker — the closing panel's `speaker` field names the
  * whole day's lineup rather than one person, so it doesn't get its own card.
+ *
+ * This matches by the exact string seeded in
+ * `supabase/migrations/20260917090100_seed_sessions.sql` for the
+ * `closing-panel` session. If that seed value is ever edited, update this
+ * set to match — an unmatched value fails open (the panel shows up as its
+ * own "speaker" card) rather than crashing, so it's easy to miss.
  */
 const NON_SPEAKER_VALUES = new Set(["Full speaker lineup"]);
 
