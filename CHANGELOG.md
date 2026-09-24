@@ -25,14 +25,14 @@
 
 ## Test Suite
 
-| Suite          | Status     |
-| -------------- | ---------- |
-| ESLint         | ⏳ pending |
-| Type-check     | ⏳ pending |
-| Unit tests     | ⏳ pending |
-| Build (Vercel) | ⏳ pending |
+| Suite          | Status    |
+| -------------- | --------- |
+| ESLint         | ✅ passed |
+| Type-check     | ✅ passed |
+| Unit tests     | ✅ passed |
+| Build (Vercel) | ✅ passed |
 
-CI: pending — will run once the release branch is pushed
+CI: https://github.com/DamirRND/react-alicante-agentic-workflow/actions/runs/35989623949
 
 ## [0.3.1] — 2026-09-24
 
