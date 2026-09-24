@@ -1,5 +1,39 @@
 # Changelog
 
+## [0.4.0] — 2026-09-24
+
+### Features
+
+- Scaffold `/speakers` page
+- Add `session_level` enum and column
+- Show each session's level in the UI
+
+### Bug Fixes
+
+- Raise session-time contrast, document speaker exclusion
+- Label session level for assistive tech, add level test coverage
+
+### Tests
+
+- Cover speaker grouping, speaker card, and nav link
+- Cover the session level in `SessionBlock`
+
+### Maintenance
+
+- Properly assign deployment dev env
+- Trigger a preview
+
+## Test Suite
+
+| Suite          | Status     |
+| -------------- | ---------- |
+| ESLint         | ⏳ pending |
+| Type-check     | ⏳ pending |
+| Unit tests     | ⏳ pending |
+| Build (Vercel) | ⏳ pending |
+
+CI: pending — will run once the release branch is pushed
+
 ## [0.3.1] — 2026-09-24
 
 ### Bug Fixes
